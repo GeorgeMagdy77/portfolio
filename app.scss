@@ -300,3 +300,73 @@ body.dark-mode .btn-dark {
   background: #1f2937 !important;
   color: #ffffff !important;
 }
+
+
+/* Strong mobile dark mode hero fix */
+body.dark-mode .header,
+body.dark-mode .header__data,
+body.dark-mode .header__data__contents {
+  background: #020617 !important;
+}
+
+body.dark-mode .header__data__contents__top,
+body.dark-mode .header__data__contents__bottom {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+body.dark-mode .header__data__contents__heading {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: none !important;
+}
+
+body.dark-mode .header__data__contents__heading::first-letter {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Mobile specific */
+@media (max-width: 768px) {
+  body.dark-mode .header__data__contents__heading {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    font-weight: 800 !important;
+  }
+
+  body.dark-mode .header__data__contents__bottom {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  body.dark-mode .header__data__contents__top {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
+
+
+/* Final fix for hero name gradient in dark mode */
+body.dark-mode .header__data__contents__heading {
+  background: linear-gradient(45deg, #ffffff 50%, #10b981 50%) !important;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+@media (max-width: 768px) {
+  body.dark-mode .header__data__contents__heading {
+    background: linear-gradient(45deg, #ffffff 50%, #10b981 50%) !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    opacity: 1 !important;
+  }
+}
