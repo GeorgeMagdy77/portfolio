@@ -1,0 +1,114 @@
+// import base modules
+@use "scss/base/typegraphy";
+@use "scss/base/reset";
+
+// import components module
+@use "scss/components/nav";
+@use "scss/components/header";
+@use "scss/components/buttons";
+@use "scss/components/modal";
+@use "scss/components/about";
+@use "scss/components/education";
+@use "scss/components/projects";
+@use "scss/components/skills";
+@use "scss/components/testimonials";
+@use "scss/components/blogs";
+@use "scss/components/footer";
+@use "scss/components/form";
+
+// import layout modules
+@use "scss/layout/grid";
+
+// import util modules
+@use "scss/utils/utils";
+
+
+
+.phone-flag {
+  width: 28px;
+  height: 18px;
+  object-fit: cover;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+.testimonials,
+.blogs {
+  display: none !important;
+}
+
+
+.toast-message {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  min-width: 280px;
+  max-width: 420px;
+  background: #e9fff3;
+  color: #0a8f45;
+  border-left: 5px solid #0ac267;
+  padding: 22px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 9999;
+}
+
+.toast-message.show {
+  display: block;
+}
+
+.toast-message.error {
+  background: #fff0f0;
+  color: #d10000;
+  border-left-color: #d10000;
+}
+
+
+
+.education__card__block__left--company {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 50%;
+  background: #ffffff !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.company-logo--aman {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.company-logo--ejada {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.company-logo--cairo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+}
