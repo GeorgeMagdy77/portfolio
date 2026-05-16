@@ -9,19 +9,15 @@ if (toggle && ul) {
 }
 
 // name typewrite effect
+// hero name
 const nameElement = document.querySelector(".header__data__contents__heading");
-const nameText = "George Magdy";
-let start = 0;
 
-const typeWrite = () => {
-  if (nameElement && start < nameText.length) {
-    nameElement.innerHTML += nameText.charAt(start);
-    start++;
-    setTimeout(typeWrite, 300);
-  }
-};
-
-typeWrite();
+if (nameElement) {
+  nameElement.innerHTML = `
+    <span class="hero-name-main">George</span>
+    <span class="hero-name-accent">Magdy</span>
+  `;
+}
 
 // open / close modal
 const modalBtn = document.querySelector(".modal-btn");
@@ -99,10 +95,19 @@ const themeToggle = document.getElementById("themeToggle");
 
 if (themeToggle) {
   const savedTheme = localStorage.getItem("theme");
+  const isDesktop = window.innerWidth >= 769;
 
-  if (savedTheme === "dark") {
+  // Default on PC = Light Mode
+  if (savedTheme === "dark" && !isDesktop) {
     document.body.classList.add("dark-mode");
     themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+  } else {
+    document.body.classList.remove("dark-mode");
+    themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+
+    if (isDesktop) {
+      localStorage.setItem("theme", "light");
+    }
   }
 
   themeToggle.addEventListener("click", function () {
