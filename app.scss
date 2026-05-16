@@ -491,3 +491,22 @@ body.dark-mode .education__card__title .title-white {
 body.dark-mode .education__card__title .title-green {
   color: #10b981 !important;
 }
+
+@media (max-width: 768px) {
+  body.dark-mode .nav__wrapper__ul,
+  body.dark-mode .nav__wrapper__ul.nav__active {
+    background: #10b981 !important;
+  }
+
+  body.dark-mode .nav__wrapper__ul__li,
+  body.dark-mode .nav__wrapper__ul__li *,
+  body.dark-mode .nav__wrapper__ul__li__a {
+    color: #ffffff !important;
+    background: transparent !important;
+  }
+
+  body.dark-mode .nav__wrapper__ul__li__a:hover {
+    color: #111827 !important;
+    background: #ffffff !important;
+  }
+}
