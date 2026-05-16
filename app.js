@@ -8,7 +8,6 @@ if (toggle && ul) {
   });
 }
 
-// name typewrite effect
 // hero name
 const nameElement = document.querySelector(".header__data__contents__heading");
 
@@ -89,35 +88,20 @@ if (contactForm && toast) {
   });
 }
 
-
 // Dark Mode
 const themeToggle = document.getElementById("themeToggle");
 
 if (themeToggle) {
-  const savedTheme = localStorage.getItem("theme");
-  const isDesktop = window.innerWidth >= 769;
-
-  // Default on PC = Light Mode
-  if (savedTheme === "dark" && !isDesktop) {
-    document.body.classList.add("dark-mode");
-    themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
-  } else {
-    document.body.classList.remove("dark-mode");
-    themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
-
-    if (isDesktop) {
-      localStorage.setItem("theme", "light");
-    }
-  }
+  // Always open website in Light Mode by default
+  document.body.classList.remove("dark-mode");
+  themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
 
   themeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("theme", "dark");
       themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
     } else {
-      localStorage.setItem("theme", "light");
       themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
     }
   });

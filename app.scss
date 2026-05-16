@@ -426,3 +426,68 @@ body.dark-mode .hero-name-accent {
     -webkit-text-fill-color: #10b981 !important;
   }
 }
+
+
+/* Fix education / experience card titles in dark mode */
+body.dark-mode .education__card__title {
+  color: #ffffff !important;
+}
+
+body.dark-mode .education__card__title span,
+body.dark-mode .education__card__title strong {
+  color: #10b981 !important;
+}
+
+/* لو كلمة SOFTWARE ENGINEER معمولالها لون لوحدها */
+body.dark-mode .education__card__title .text-secondary {
+  color: #10b981 !important;
+}
+
+/* أقوى حل لو فيه CSS قديم مغطي */
+body.dark-mode .education__card h3,
+body.dark-mode .education__card h3 * {
+  color: #ffffff !important;
+}
+
+body.dark-mode .education__card h3 span,
+body.dark-mode .education__card h3 .text-secondary {
+  color: #10b981 !important;
+}
+
+
+/* Education / Experience title colors */
+.education__card__title .title-white {
+  color: #000000;
+}
+
+.education__card__title .title-green {
+  color: #10b981;
+}
+
+/* Dark mode */
+body.dark-mode .education__card__title .title-white {
+  color: #ffffff !important;
+}
+
+body.dark-mode .education__card__title .title-green {
+  color: #10b981 !important;
+}
+
+
+/* Education / Experience title colors */
+.education__card__title .title-white {
+  color: #000000;
+}
+
+.education__card__title .title-green {
+  color: #10b981;
+}
+
+/* Dark mode */
+body.dark-mode .education__card__title .title-white {
+  color: #ffffff !important;
+}
+
+body.dark-mode .education__card__title .title-green {
+  color: #10b981 !important;
+}
