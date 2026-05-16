@@ -112,3 +112,153 @@
   border-radius: 50%;
   object-fit: contain;
 }
+
+
+.nav__wrapper__actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0ac267;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle i {
+  font-size: 18px;
+}
+
+body.dark-mode {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark-mode .nav {
+  background: #111827;
+}
+
+body.dark-mode .nav__wrapper__logo__brand,
+body.dark-mode .nav__wrapper__ul__li__a,
+body.dark-mode .heading,
+body.dark-mode .skills__contents__heading,
+body.dark-mode .header__data__contents__top,
+body.dark-mode .header__data__contents__heading,
+body.dark-mode .header__data__contents__bottom {
+  color: #ffffff;
+}
+
+body.dark-mode .about,
+body.dark-mode .education,
+body.dark-mode .projects,
+body.dark-mode .skills,
+body.dark-mode .footer {
+  background: #0f172a;
+}
+
+body.dark-mode .education__card,
+body.dark-mode .projects__card,
+body.dark-mode .form__control {
+  background: #1f2937;
+  color: #ffffff;
+}
+
+body.dark-mode .about__info__message,
+body.dark-mode .skills__contents__message,
+body.dark-mode .about__info__block__left,
+body.dark-mode .about__info__block__right,
+body.dark-mode .education__card__block__right,
+body.dark-mode .skills__block__list,
+body.dark-mode .skills__block__exp,
+body.dark-mode .footer__copyright {
+  color: #d1d5db;
+}
+
+body.dark-mode .form__control {
+  border-color: #374151;
+}
+
+body.dark-mode .form__control::placeholder {
+  color: #9ca3af;
+}
+
+body.dark-mode .theme-toggle {
+  background: #1f2937;
+  color: #facc15;
+}
+
+
+/* fix dark mode contrast */
+
+/* 1) years text in skills */
+body.dark-mode .skills__block__exp {
+  background: #f3f4f6 !important;
+  color: #1f2937 !important;
+  font-weight: 600;
+}
+
+/* 2) contact form box */
+body.dark-mode .footer .form {
+  background: #f8fafc !important;
+}
+
+/* 3) contact me heading inside the white form */
+body.dark-mode .footer .form .heading {
+  color: #111827 !important;
+}
+
+/* 4) optional: make inputs a bit clearer */
+body.dark-mode .footer .form__control {
+  background: #1e293b !important;
+  color: #ffffff !important;
+  border: 1px solid #334155 !important;
+}
+
+body.dark-mode .footer .form__control::placeholder {
+  color: #cbd5e1 !important;
+}
+
+
+/* modal dark mode fix */
+body.dark-mode .modal__wrapper {
+  background: #ffffff !important;
+}
+
+body.dark-mode .modal__wrapper__contents .heading {
+  color: #111827 !important;
+}
+
+body.dark-mode .modal__wrapper__contents__p {
+  color: #111827 !important;
+}
+
+body.dark-mode .modal__wrapper__contents__block__left,
+body.dark-mode .modal__wrapper__contents__block__right {
+  color: #111827 !important;
+}
+
+body.dark-mode .modal__wrapper__close {
+  color: #94a3b8 !important;
+}
+
+/* phone number fix inside modal in dark mode */
+body.dark-mode .modal__wrapper__contents__block__right {
+  color: #111827 !important;
+}
+
+body.dark-mode .modal__wrapper__contents__block__right .phone-flag {
+  opacity: 1;
+}
+
+body.dark-mode .modal__wrapper__contents__block span {
+  color: #111827 !important;
+}
