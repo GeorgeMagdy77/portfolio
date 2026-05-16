@@ -262,3 +262,41 @@ body.dark-mode .modal__wrapper__contents__block__right .phone-flag {
 body.dark-mode .modal__wrapper__contents__block span {
   color: #111827 !important;
 }
+
+
+/* Fix hero section in dark mode on mobile */
+body.dark-mode .header {
+  background: #020617 !important;
+}
+
+body.dark-mode .header__data {
+  background: #020617 !important;
+}
+
+body.dark-mode .header__data__contents__top {
+  color: #ffffff !important;
+}
+
+body.dark-mode .header__data__contents__heading {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+body.dark-mode .header__data__contents__heading span,
+body.dark-mode .header__data__contents__heading .text-secondary {
+  color: #10b981 !important;
+}
+
+body.dark-mode .header__data__contents__bottom {
+  color: #ffffff !important;
+}
+
+body.dark-mode .btn-default {
+  background: #00b875 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .btn-dark {
+  background: #1f2937 !important;
+  color: #ffffff !important;
+}
